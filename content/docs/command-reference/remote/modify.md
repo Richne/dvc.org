@@ -321,11 +321,11 @@ storage. Whether they're effective depends on each storage platform.
 
 ### Click for Microsoft Azure Blob Storage
 
-- `url` (required) - remote location, in the `azure://<container>/<object>`
+- `url` (required) - remote location, in the `azure://<container>/<storageaccount>`
   format:
 
   ```dvc
-  $ dvc remote modify myremote url azure://mycontainer/path
+  $ dvc remote modify myremote url azure://mycontainer/mystorageaccount
   ```
 
   Note that if the given container name isn't found in your account, DVC will
